@@ -59,7 +59,7 @@ function App() {
       <div className="w-full bg-primary h-screen flex flex-col justify-center">
         <div className="w-full items-center max-w-screen-xl flex flex-col justify-center my-auto mx-auto px-4 lg:px-8 xl:px-0 gap-20">
           <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight">journey of earning professional excellence</div>
-          <div className="w-full flex justify-center max-w-3xl flex-wrap gap-20 items-center">
+          <div className="w-full flex justify-center max-w-3xl gap-20 items-center">
             <img src={exp1} alt="instance" className="w-44" />
             <img src={exp2} alt="instance" className="w-44" />
             <img src={exp4} alt="instance" className="w-44" />
@@ -68,7 +68,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* Experience */}
+      {/* Services */}
       <div className="w-full bg-primary h-screen flex flex-col justify-center">
         <div className="w-full items-center max-w-screen-xl flex flex-col justify-center my-auto mx-auto px-4 lg:px-8 xl:px-0 gap-20">
           <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl py-1 md:text-6xl lg:text-4xl font-extralight">offering design and development solutions.</div>
@@ -90,6 +90,11 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Recent Works */}
+      <div className="w-full bg-primary h-screen flex flex-col justify-center items-center">
+        <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight border">recent works with satisfying outcomes</div>
+        <section className="w-1/3 relative h-1/3 rounded-3xl bg-gradient-to-b from-[#403F4F] to-primary bg-opacity-25 shadow-2xl border-solid after:bg-gradient-to-r ring-0 hover:ring-2 hover:ring-secondary2 transition-all duration-200"></section>
       </div>
     </>
   );
