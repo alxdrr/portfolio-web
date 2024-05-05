@@ -10,13 +10,15 @@ import iconGD from "./assets/GD.svg";
 import iconPD from "./assets/PD.svg";
 import iconWD from "./assets/WD.svg";
 import portrait from "./assets/portrait.svg";
+import Project1 from "./assets/projects/Forcoms.png";
+import Bank from "./assets/projects/Bank.png";
 
 function App() {
   return (
     <>
       {/* Navbar & Hero */}
       <div className="w-full bg-primary h-screen flex flex-col justify-center">
-        <nav className="w-screen items-center top-0 self-center lg:absolute z-10 fixed justify-between flex h-28 px-14 max-w-screen-xl">
+        <nav className="w-screen items-center top-0 self-center justify-between flex h-28 px-14 max-w-screen-xl">
           <div className="bg-gradient-to-r from-gray-50 to-gray-400 w-max bg-clip-text text-transparent font-extralight text-2xl">charles alexander</div>
           <section className="flex gap-10">
             <img src={iconIg} className="" alt="" />
@@ -30,7 +32,7 @@ function App() {
         </div>
       </div>
       {/* About */}
-      <div className="w-full bg-primary h-screen flex flex-col justify-center">
+      <div className="w-full hidden md:flex bg-primary h-screen flex-col justify-center">
         <div className="w-full items-center max-w-screen-xl flex flex-col justify-center my-auto mx-auto px-4 lg:px-8 xl:px-0">
           <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight">charles alexander</div>
           <div className="w-full flex justify-between items-center">
@@ -56,7 +58,7 @@ function App() {
         </div>
       </div>
       {/* Experience */}
-      <div className="w-full bg-primary h-screen flex flex-col justify-center">
+      <div className="w-full bg-primary h-screen hidden md:flex flex-col justify-center">
         <div className="w-full items-center max-w-screen-xl flex flex-col justify-center my-auto mx-auto px-4 lg:px-8 xl:px-0 gap-20">
           <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight">journey of earning professional excellence</div>
           <div className="w-full flex justify-center max-w-3xl gap-20 items-center">
@@ -92,10 +94,31 @@ function App() {
         </div>
       </div>
       {/* Recent Works */}
-      <div className="w-full bg-primary h-screen flex flex-col justify-center items-center">
-        <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight border">recent works with satisfying outcomes</div>
-        <section className="w-1/3 relative h-1/3 rounded-3xl bg-gradient-to-b from-[#403F4F] to-primary bg-opacity-25 shadow-2xl border-solid after:bg-gradient-to-r ring-0 hover:ring-2 hover:ring-secondary2 transition-all duration-200"></section>
+      <div className="w-full bg-primary h-screen flex flex-col justify-center items-center gap-10">
+        <div className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-extralight">recent works with satisfying outcomes</div>
+        <div className="flex w-full  justify-center items-center p-10 gap-12">
+          <section className="relative h-3/4 rounded-3xl bg-gradient-to-b from-[#403F4F] to-primary bg-opacity-25 shadow-2xl shadow-black border-solid after:bg-gradient-to-r ring-0 hover:ring-2 hover:ring-secondary2 transition-all duration-200 p-10 flex justify-center items-center flex-col gap-4">
+            <img src={Project1} className="h-4/5" alt="" />
+            <div className="flex flex-col justify-center items-center gap-2">
+              <p className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-medium">Forcoms Company Profile</p>
+              <p className="text-white w-max text-md md:text-xl lg:text-2xl font-extralight">Web Development</p>
+            </div>
+          </section>
+          <section className="relative h-3/4 rounded-3xl bg-gradient-to-b from-[#403F4F] to-primary bg-opacity-25 shadow-2xl shadow-black border-solid after:bg-gradient-to-r ring-0 hover:ring-2 hover:ring-secondary2 transition-all duration-200 p-10 flex justify-center items-center flex-col gap-4">
+            <img src={Bank} className="h-4/5" alt="" />
+            <div className="flex flex-col justify-center items-center gap-2">
+              <p className="bg-gradient-to-r from-secondary1 to-secondary2 bg-clip-text text-transparent w-max text-3xl md:text-6xl lg:text-4xl font-medium">Bank BPD</p>
+              <p className="text-white w-max text-md md:text-xl lg:text-2xl font-extralight">HCM Software</p>
+            </div>
+          </section>
+        </div>
       </div>
+      {/* Footer */}
+      <section className="flex bg-primary p-5 justify-center items-center gap-10">
+        <img src={iconIg} className="" alt="" />
+        <img src={iconLi} alt="" />
+        <img src={iconGh} alt="" />
+      </section>
     </>
   );
 }
